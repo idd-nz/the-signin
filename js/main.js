@@ -1,3 +1,5 @@
+//PART-1
+//--------------------------------
 //reference//
 // let modal = document.querySelector(`.modal`);
 // let signin = document.querySelector(`.signin`);
@@ -23,9 +25,9 @@ $('.close').addEventListener('click',(event) => {
 
 //submit
 $('.submit').addEventListener('click',(event) => {
-//error/user
+//add/user
   $('#user').classList.add(`error`)
-//error/password
+//add/pass
   $('#pass').classList.add(`error`)
 })
 
@@ -43,3 +45,17 @@ $('#pass').addEventListener('focus',event => {
   $('#pass').classList.remove(`error`)
 })
 
+//PART-2
+//--------------------------------
+$('.form').addEventListener('submit', event => {
+  event.preventDefault()
+  //error/user
+  $('#user').classList.add(`error`)
+  //error/pass
+  $('#pass').classList.add(`error`)
+})
+
+
+// if $('.submit').addEventListener('click', event => {
+
+// })
